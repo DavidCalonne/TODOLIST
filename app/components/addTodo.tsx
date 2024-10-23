@@ -1,7 +1,10 @@
+import styles from "./addTodo.module.css";
+
 export default function AddTodo() {
   return (
-    <div>
-      <p>Add Todo</p>
-    </div>
+    <form className={styles.form}>
+      <input className={styles.input} type="text" name="todo-item" defaultValue="" />
+      <button className={styles.button}>+</button>
+    </form>
   );
 }
