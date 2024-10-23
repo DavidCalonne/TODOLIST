@@ -1,7 +1,17 @@
-export default function Todo() {
+
+interface TodoProps {
+  id: number;
+  todo: string;
+  onDelete: (id: number) => void;
+}
+
+export default function Todo({ id, todo, onDelete }: TodoProps) {
   return (
     <div>
-      <p>Todo</p>
+      <p>{todo}</p>
+      <button onClick={() => onDelete(id)}>
+        Supprimer
+      </button>
     </div>
   );
 }

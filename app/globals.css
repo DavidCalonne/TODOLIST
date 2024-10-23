@@ -1,6 +1,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --blue: rgb(47, 194, 220);
+  --lightblue: rgb(123, 230, 249);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -9,6 +9,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    font-size: 16px
 }
 .button{
     padding: 10px;
@@ -17,4 +21,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--blue);
+    font-weight: 700;
+    font-size: 20px
+}
+.button:hover{
+    cursor: pointer;
+    background-color: var(--lightblue);
+}
+.input, .button{border: none}
+.error{
+    color: red;
+    text-align: center;
+    margin-top: 5px;
 }
